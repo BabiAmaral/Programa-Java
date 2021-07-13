@@ -1,4 +1,4 @@
-package POO;
+package POO.Heranca;
 
 public class Preguica extends Animal {
 	private String especie;
@@ -11,6 +11,17 @@ public class Preguica extends Animal {
 		this.especie=especie;
 		this.regiao=regiao;	
 		this.numDedos=numDedos;
+	}
+	
+	@Override	
+	public void som ()
+	{
+		System.out.println("Som emitido: ...");
+	}
+	@Override
+	public void capacidade ()
+	{
+		System.out.println("Capacidade: subir em arvores.");
 	}
 
 	public String getEspecie() {

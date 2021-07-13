@@ -1,4 +1,4 @@
-package POO;
+package POO.Heranca;
 
 public class Cachorro extends Animal {
 	
@@ -12,6 +12,18 @@ public class Cachorro extends Animal {
 		this.raca=raca;
 		this.cor=cor;		
 	}
+	
+	@Override	
+	public void som ()
+	{
+		System.out.println("Som emitido: Au Au Au...");
+	}
+	@Override
+	public void capacidade ()
+	{
+		System.out.println("Capacidade: correr");
+	}
+	
 	//metodo dos meus atributos adicionais
 	public String getRaca() {
 		return raca;
@@ -25,6 +37,8 @@ public class Cachorro extends Animal {
 	public void setCor(String cor) {
 		this.cor = cor;
 	}
+	
+
 	//metodo adicional
 	public void imprimirInfo()
 	{

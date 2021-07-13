@@ -1,4 +1,4 @@
-package POO;
+package POO.Heranca;
 
 public class Cavalo extends Animal {
 	private String genero;
@@ -11,6 +11,17 @@ public class Cavalo extends Animal {
 		this.genero=genero;
 		this.cor=cor;
 		this.peso=peso;
+	}
+	
+	@Override	
+	public void som ()
+	{
+		System.out.println("Som emitido: Irrii...");
+	}
+	@Override
+	public void capacidade ()
+	{
+		System.out.println("Capacidade: Corre");
 	}
 	// metodo para os atritutos adicionais
 
